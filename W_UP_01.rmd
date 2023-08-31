@@ -59,10 +59,17 @@ basicCN + geom_boxplot()
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
 
+The plot shows that the skill players completed more pushups compared to the line players. the middle for the line gys was 15 and the middle for the skill players was 50
 
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+favstats(pushups~position,data=mydata)
+```
+
+The table shows that the skill players completed 3 times more pushups than the line players.
 
 ## Inferential Results
 
